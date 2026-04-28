@@ -9,7 +9,7 @@ public class Ejercicio06 {
 		List<Integer> listaNumeros = new ArrayList<>();
 
 		try {
-			Scanner sc = new Scanner(new FileReader("Numeros.txt"));
+			Scanner sc = new Scanner(new FileReader("C:\\Users\\ada.atienza\\git\\PROG2526-Unidad06\\PROG2526-Unidad06\\src\\fichero06\\Numeros"));
 			while (sc.hasNextInt()) {
 				listaNumeros.add(sc.nextInt());
 			}
@@ -20,7 +20,7 @@ public class Ejercicio06 {
 
 		Collections.sort(listaNumeros);
 
-		try (BufferedWriter out = new BufferedWriter(new FileWriter("NumerosOrdenados.txt"))) {
+		try (BufferedWriter out = new BufferedWriter(new FileWriter("C:\\Users\\ada.atienza\\git\\PROG2526-Unidad06\\PROG2526-Unidad06\\src\\fichero06\\NumerosOrdenados"))) {
 			for (Integer n : listaNumeros) {
 				out.write(String.valueOf(n));
 				out.newLine();
