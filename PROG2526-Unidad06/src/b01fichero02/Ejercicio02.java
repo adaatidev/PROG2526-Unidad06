@@ -1,4 +1,4 @@
-package fichero02;
+package b01fichero02;
 
 import java.io.*;
 import java.util.Scanner;

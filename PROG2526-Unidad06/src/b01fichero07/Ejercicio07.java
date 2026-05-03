@@ -1,4 +1,4 @@
-package fichero07;
+package b01fichero07;
 
 import java.io.*;
 import java.util.InputMismatchException;

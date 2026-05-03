@@ -1,4 +1,4 @@
-package fichero06;
+package b01fichero06;
 
 import java.io.*;
 import java.util.*;
