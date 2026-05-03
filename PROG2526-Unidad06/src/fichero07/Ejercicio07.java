@@ -1,8 +1,6 @@
 package fichero07;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -20,7 +18,7 @@ public class Ejercicio07 {
 		do {
 			try {
 				try {
-					Buffered in = new BufferedWriter(new FileWriter(
+					BufferedWriter in = new BufferedWriter(new FileWriter(
 							"C:\\Users\\ada.atienza\\git\\PROG2526-Unidad06\\PROG2526-Unidad06\\src\\fichero07\\Contactos"));
 					opcion = sc.nextInt();
 					sc.nextLine();
@@ -39,12 +37,11 @@ public class Ejercicio07 {
 					default -> {
 						System.out.println("Opción no válida, intente de nuevo");
 					}
-					} catch (IOException e) {
+					}
+					in.close();
+				} catch (IOException e) {
 					e.printStackTrace();
 				}
-				
-				
-				in.close();
 			} catch (InputMismatchException e) {
 				System.out.println("ERROR: Entrada no válida. Por favor, use números.");
 				sc.nextLine();
